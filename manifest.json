@@ -1,0 +1,35 @@
+/* This manifest.json file contains metadata for the entire extension. It provides
+important information about the workings of the program. */
+
+{
+    "name": "Let Me See!",
+    "version": "0.1",
+    "description": "This Google Chrome extension allows users to access and read information about selected words or phrases.",
+    "manifest_version": 2,
+    "icons": {
+        "16": "icon16.jpg",
+        "48": "icon48.jpg",
+        "128": "icon128.jpg"
+    },
+    // Browser action is used for the extension icon in the Google Chrome toolbar
+    "browser_action": {
+        "default_title": "Let Me See!",
+        "default_icon": "icon16.jpg",
+        "default_popup": "popup.html"
+    },
+    // These permissions allow us to query terms from the tab
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "<all_urls>"
+    ],
+    // Content scripts run in the context of web pages
+    "content_scripts": [
+    {
+        "matches": ["<all_urls>"],
+        "js": ["content_script.js"],
+        "run_at": "document_start",
+        "all_frames": false
+    }
+  ]
+}

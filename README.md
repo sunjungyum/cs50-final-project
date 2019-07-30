@@ -1,3 +1,4 @@
+#cs50-final-project
 Our project, a Chrome extension, can be either downloaded as an actual extension from the Chrome Web Store or loaded as
 unpacked extension. We have not yet uploaded the extension to the Store because we hope to do so after adding even more
 features. The most simple way to use our project is to download it as a ZIP file from the IDE, unzip it,

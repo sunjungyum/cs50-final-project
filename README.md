@@ -25,3 +25,5 @@ still open a new tab to the search results, so that users can explore the option
 
 Each time the user clicks on the extension icon, previous search results and button redirects will automatically be
 cleared and replaced with the new search results.
+
+Assigned as the final project during Harvard's fall 2018 CS50 course. This was improved upon in the future and published on the Chrome web store.
